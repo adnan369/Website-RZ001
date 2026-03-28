@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart | Your Local Grocery Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Glassmorphism Header -->
+<header class="glass-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">🍎 FreshMart</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#notices">Announcements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="glass-btn" onclick="window.location.href='/admin'">Admin Login</button>
+    </nav>
+</header>
+
+<!-- Hero Section with Animation -->
+<section class="hero">
+    <div class="hero-content fade-in-up">
+        <h1>Fresh Grocery<br>Delivered to Your Doorstep</h1>
+        <p>Farm-fresh vegetables, fruits, and daily essentials</p>
+        <button class="glass-btn" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+            Shop Now →
+        </button>
+    </div>
+</section>
+
+<!-- Notices Section -->
+<section id="notices" class="notices-section">
+    <h2 class="section-title reveal">📢 Announcements</h2>
+    <div class="notices-container" id="notices-container">
+        <!-- Notices will load here -->
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products-section">
+    <h2 class="section-title reveal">🛍️ Fresh Picks</h2>
+    <div class="products-grid" id="products-container">
+        <!-- Products will load here -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>🍎 FreshMart</h3>
+            <p>Your trusted neighborhood grocery store. Freshness guaranteed, every day.</p>
+        </div>
+        <div class="footer-section">
+            <h3>📍 Visit Us</h3>
+            <p>123 Main Street,<br>Your City, 123456</p>
+        </div>
+        <div class="footer-section">
+            <h3>📞 Contact</h3>
+            <p>📧 hello@freshmart.com<br>📞 +91 98765 43210</p>
+        </div>
+        <div class="footer-section">
+            <h3>⏰ Hours</h3>
+            <p>Mon-Sat: 9am - 9pm<br>Sun: 10am - 6pm</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 FreshMart. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
